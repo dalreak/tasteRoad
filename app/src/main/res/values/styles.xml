@@ -8,4 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name = "FirstTheme" parent ="@android:style/Theme.Light.NoTitleBar">
+        <item name = "android:windowBackground">@drawable/first_picture</item>
+    </style>
 </resources>
