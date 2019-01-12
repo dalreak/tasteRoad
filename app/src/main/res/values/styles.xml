@@ -9,7 +9,7 @@
     </style>
 
     <style name = "SplashTheme" parent = "@android:style/Theme.Light.NoTitleBar">
-        <item name = "android:windowBackground">@drawable/backround</item>
+        <item name = "android:windowBackground">@drawable/background</item>
     </style>
 
 </resources>
