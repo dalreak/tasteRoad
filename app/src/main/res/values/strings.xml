@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">TasteRoad</string>
+    <string name="app_name">전북대맛집탐방</string>
+    <string name="intro_string">hello world</string>
 </resources>

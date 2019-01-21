@@ -16,7 +16,7 @@ public class SplashActivity extends FragmentActivity {
         catch(InterruptedException e){
             e.printStackTrace();
         }
-        startActivity(new Intent(this,MainActivity.class));
+        startActivity(new Intent(this,IntroActivity.class));
         finish();
     }
 }
