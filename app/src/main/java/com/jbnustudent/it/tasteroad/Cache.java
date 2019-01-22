@@ -14,7 +14,7 @@ public class Cache extends Application {
 
    Context context;
 
-    public Cache(IntroActivity co){
+    public Cache(Context co){
         context = co;
     }
 
@@ -39,11 +39,11 @@ public class Cache extends Application {
         if(!cacheFile.exists()){
             cacheFile.createNewFile();
             FileWriter fileWriter = new FileWriter(cacheFile);
-            fileWriter.write("{\"config\":{},\"general\":{}}");
+            fileWriter.write("{\"config\":{\"introSet\":\"yes\"},\"general\":{}}");
             fileWriter.flush();
             fileWriter.close();
         }
-        FileWriter fileWriter = new FileWriter(cacheFile,true);
+        FileWriter fileWriter = new FileWriter(cacheFile);
         fileWriter.write(obj);
         fileWriter.flush();
         fileWriter.close();
@@ -52,8 +52,13 @@ public class Cache extends Application {
     public String Read() throws IOException{
         File cacheDir = getCacheDir(context);
         File cacheFile = new File(cacheDir,"Cache.txt");
-        if(!cacheFile.exists())
+        if(!cacheFile.exists()) {
             cacheFile.createNewFile();
+            FileWriter fileWriter = new FileWriter(cacheFile);
+            fileWriter.write("{\"config\":{\"introSet\":\"yes\"},\"general\":{}}");
+            fileWriter.flush();
+            fileWriter.close();
+        }
         FileInputStream inputStream = new FileInputStream((cacheFile));
         Scanner s = new Scanner(inputStream);
         String text = "";
