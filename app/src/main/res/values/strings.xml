@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">전북대맛집탐방</string>
     <string name="intro_string">hello world</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

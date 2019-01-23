@@ -1,6 +1,5 @@
 package com.jbnustudent.it.tasteroad;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -12,6 +11,6 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.main_view, container, false);
+        return inflater.inflate(R.layout.bottom_view, container, false);
     }
 }
