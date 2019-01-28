@@ -2,4 +2,9 @@
     <string name="app_name">전북대맛집탐방</string>
     <string name="intro_string">hello world</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="intro_name"> 이름 :</string>
+    <string name="intro_gender"> 성별 :</string>
+    <string name="intro_age"> 나이 :</string>
+    <string name="intro_motto"> 소개 :</string>
+    <string name="intro_format">{"intro_data":[{"name":"hi","age":24,"gender":"남","motto":"착하게살자","introduce":"blahblah"},{"name":"he","age":22,"gender":"남","motto":"살자","introduce":"blahblㄹah"},{"name":"hu","age":23,"gender":"여","motto":"착살자","introduce":"blahblㄴah"},{"name":"ha","age":25,"gender":"남","motto":"착하 살자","introduce":"blahㄴㅁblah"}]}</string>
 </resources>
